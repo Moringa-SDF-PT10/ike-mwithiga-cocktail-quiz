@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz On The Rocks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="start-prompt-screen" class="screen">
+            <h1 class="start-animation">Quiz On The Rocks!🍹</h1>
+            <h2 class="start-animation">Ready for your Bar Exam?</h2>
+            <button id="initial-start-button">Let's Go!</button>
+        </div>
+
+        <div id="category-screen" class="screen hidden"> <h2>Pick Your Poison!</h2>
+            <ul id="category-list">
+                <li data-category="ingredient"><i class="fas fa-lemon"></i> Ingredients Quiz</li>
+                <li data-category="glass"><i class="fas fa-martini-glass-citrus"></i> Glassware Quiz</li>
+                <li data-category="image"><i class="fas fa-camera-retro"></i> Guess by Image</li>
+                <li data-category="alcoholic"><i class="fas fa-wine-bottle"></i> Alcoholic/Non-Alc</li>
+            </ul>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden"> <div id="timer-bar-container">
+                <div id="timer-bar"></div>
+            </div>
+
+            <div id="question-container">
+                <div id="image-container"><img id="cocktail-image" src="" alt="Image related to the current quiz question" /></div>
+                <p id="question-text"></p>
+                <div id="answer-options" class="options-grid"></div>
+            </div>
+            <div id="feedback" class="feedback"></div>
+            <div id="score-display">Score: <span id="current-score">0</span></div>
+        </div>
+
+        <div id="score-screen" class="screen hidden"> <h2>Quiz Complete!</h2>
+             <p>Your Final Score: <span id="final-score">0</span></p>
+             <h3>Review Incorrect Answers:</h3>
+             <div id="wrong-answers-review"></div>
+             <button id="restart-button">Play Again?</button>
+        </div>
+
+        <div id="loading-indicator" class="screen hidden"> <img id="loading-shaker-gif" src="assets/shaker-animation.gif" alt="Loading animation" />
+            <i id="loading-fallback-icon" class="fas fa-martini-glass-citrus"></i>
+            <p id="loading-text"></p>
+        </div>
+
+    </div> <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
