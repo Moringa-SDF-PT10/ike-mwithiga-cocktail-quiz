@@ -1,4 +1,4 @@
-/* --- Base Styles & Variables --- */
+
 :root {
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Lato', sans-serif;
@@ -50,22 +50,22 @@ h2 { font-family: var(--font-heading); color: var(--color-text-light); font-size
 h3 { font-family: var(--font-body); font-weight: 700; color: var(--color-text); font-size: 1.3em; margin-bottom: 15px; }
 p { color: var(--color-text-light); font-size: 1.1em; margin-bottom: 20px; }
 
-/* --- Animation Keyframes --- */
+
 @keyframes fadeIn { 0% { opacity: 0; transform: translateY(20px) scale(0.98); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
 @keyframes fadeOut { 0% { opacity: 1; transform: translateY(0) scale(1); } 100% { opacity: 0; transform: translateY(-20px) scale(0.98); } }
 @keyframes slideInUp { 0% { opacity: 0; transform: translateY(50px); } 100% { opacity: 1; transform: translateY(0); } }
 @keyframes slideOutDown { 0% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(50px); } }
 @keyframes shake { 10%, 90% { transform: translate3d(-1px, 0, 0) rotate(-2deg); } 20%, 80% { transform: translate3d(2px, 0, 0) rotate(2deg); } 30%, 50%, 70% { transform: translate3d(-3px, 0, 0) rotate(-2deg); } 40%, 60% { transform: translate3d(3px, 0, 0) rotate(2deg); } }
-/* ++ Keyframes for timer bar ++ */
+
 @keyframes shrink { from { width: 100%; } to { width: 0%; } }
 
 
-/* --- Screen Visibility & Animation Classes --- */
+
 .screen { width: 100%; }
 .screen.hidden { display: none !important; }
 .fade-in { animation: fadeIn 0.6s ease-out forwards; } .fade-out { animation: fadeOut 0.4s ease-in forwards; } .slide-in-up { animation: slideInUp 0.6s ease-out forwards; } .slide-out-down { animation: slideOutDown 0.4s ease-in forwards; }
 
-/* --- Button Styling --- */
+
 button { font-family: var(--font-body); background-color: var(--color-primary); color: white; border: none; padding: 14px 30px; font-size: 1.1em; font-weight: 700; border-radius: var(--border-radius); cursor: pointer; transition: all 0.25s ease; margin-top: 20px; box-shadow: var(--shadow-light); letter-spacing: 0.5px; }
 button:hover:not(:disabled) { background-color: var(--color-primary-dark); box-shadow: var(--shadow-medium); transform: translateY(-2px); }
 button:active:not(:disabled) { transform: translateY(0px); box-shadow: none; }
@@ -73,14 +73,14 @@ button:disabled { background-color: #cccccc; color: #888888; cursor: not-allowed
 .button-error-retry { margin-top: 20px !important; background-color: var(--color-incorrect); font-size: 1em !important; }
 .button-error-retry:hover { background-color: #a14f46; transform: translateY(-2px); }
 
-/* --- Category Selection Styling --- */
+
 #category-list { list-style: none; padding: 0; margin: 30px auto; max-width: 450px; }
 #category-list li { background-color: white; color: var(--color-primary); border: 2px solid var(--color-secondary); padding: 18px 25px; margin-bottom: 15px; border-radius: var(--border-radius); cursor: pointer; transition: all 0.25s ease; font-size: 1.2em; font-weight: 700; display: flex; align-items: center; box-shadow: var(--shadow-light); }
 #category-list li:hover { background-color: var(--color-secondary); border-color: var(--color-primary); color: var(--color-primary-dark); transform: translateY(-2px) scale(1.01); box-shadow: var(--shadow-medium); }
 #category-list li i { margin-right: 15px; font-size: 1.3em; width: 30px; text-align: center; color: var(--color-primary); transition: color 0.25s ease; }
 #category-list li:hover i { color: var(--color-primary-dark); }
 
-/* --- Quiz Screen Specific --- */
+
 #question-container { margin-bottom: 30px; }
 #question-text { font-size: 1.4em; margin-bottom: 25px; color: var(--color-text); font-weight: 700; min-height: 3em; }
 .options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
@@ -95,16 +95,14 @@ button:disabled { background-color: #cccccc; color: #888888; cursor: not-allowed
 #score-display { margin-top: 30px; font-weight: 700; font-size: 1.2em; color: var(--color-text-light); }
 #score-display span { color: var(--color-primary); font-size: 1.3em; }
 
-/* -- Removed Text Timer Styles -- */
 
-/* ++ Visual Timer Bar Styles ++ */
 #timer-bar-container { width: 100%; height: 12px; background-color: var(--color-border); border-radius: 6px; margin-top: 15px; /* Adjusted margin */ margin-bottom: 30px; overflow: hidden; transition: opacity 0.3s ease, height 0.3s ease, margin 0.3s ease; /* Smooth hide */ }
 #timer-bar-container.timer-hidden { opacity: 0; height: 0; margin-top: 0; margin-bottom: 10px; pointer-events: none; } /* Hide smoothly */
 #timer-bar { height: 100%; width: 100%; background: linear-gradient(to right, var(--color-primary-dark), var(--color-primary)); border-radius: 6px; /* No transition needed here */ }
 #timer-bar.shrinking { animation: shrink 15s linear forwards; /* Default duration, JS overrides */ animation-play-state: running; }
 #timer-bar.low-time { background: linear-gradient(to right, #cc8400, orange); }
 #timer-bar.out-of-time { background: linear-gradient(to right, #a14f46, var(--color-incorrect)); }
-/* ++ End Visual Timer Bar Styles ++ */
+
 
 #image-container { margin-bottom: 25px; min-height: 150px; display: flex; justify-content: center; align-items: center; }
 #cocktail-image { max-width: 100%; max-height: 300px; border-radius: var(--border-radius); box-shadow: var(--shadow-medium); border: 3px solid white; display: none; }
@@ -123,7 +121,7 @@ button:disabled { background-color: #cccccc; color: #888888; cursor: not-allowed
 #loading-indicator .error-message { display: block; color: var(--color-incorrect); font-weight: bold; margin-bottom: 15px; }
 @media (max-width: 600px) { .container { padding: 25px 20px; } h1 { font-size: 2.2em; } h2 { font-size: 1.6em; } #question-text { font-size: 1.2em; } button { padding: 12px 25px; font-size: 1em; } .options-grid { grid-template-columns: 1fr; } .option-button { text-align: center; } #category-list { max-width: 100%; } #category-list li { font-size: 1.1em; padding: 15px 20px; } }
 
-/* --- Animation Keyframes --- */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -195,7 +193,7 @@ button:disabled { background-color: #cccccc; color: #888888; cursor: not-allowed
     }
 }
 
-/* ++ Keyframes for timer bar ++ */
+
 @keyframes shrink {
     from {
         width: 100%;
@@ -206,7 +204,7 @@ button:disabled { background-color: #cccccc; color: #888888; cursor: not-allowed
     }
 }
 
-/* New animations for start page */
+
 @keyframes flyFadeBounce {
     0% {
         opacity: 0;
@@ -232,7 +230,7 @@ button:disabled { background-color: #cccccc; color: #888888; cursor: not-allowed
     animation: flyFadeBounce 3s ease-out forwards;
 }
 
-/* --- Screen Visibility & Animation Classes --- */
+
 .screen {
     width: 100%;
 }

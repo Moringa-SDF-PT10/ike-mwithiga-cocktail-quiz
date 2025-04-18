@@ -9,7 +9,7 @@
 
 This project is a web-based quiz game designed as a **Single Page Application (SPA)** to challenge and entertain users with trivia about cocktails. It integrates fundamental front-end development skills, utilizing **HTML, CSS, and JavaScript** to create an interactive user experience. The application communicates with the public **TheCocktailDB API** as its dynamic data source, ensuring a varied question set across multiple sessions.
 
-The SPA guides the user through an animated start sequence, allows category selection, presents timed questions with immediate feedback, tracks the score, and provides a review of incorrect answers upon completion, culminating in a confetti celebration for high scores.
+The SPA guides the user through an animated start sequence, allows category selection, presents timed questions with immediate feedback, tracks the score, and provides a review of incorrect answers upon completion, ending with a confetti celebration for high scores above 4.
 
 ---
 ## 📁 Project Structure
@@ -19,12 +19,13 @@ Below is the file organization for this project:
 ```text
 ike-mwithiga-cocktail-quiz/
 ├── assets/
-│    ├── screenshot_start.png
-│    ├── screenshot_quiz.png
-│    └── shaker-animation.gif 
+│   ├── screenshot_start.png
+│   ├── screenshot_quiz.png
+│   ├── shaker-animation.gif 
+│   └── Quiz_On_The_Rocks.gif
 │
 ├── index.html
-├── style.css
+├── styles.css
 ├── script.js 
 └── README.md
 ```
@@ -73,8 +74,12 @@ This SPA integrates and showcases proficiency in the following areas:
 *Initial screen inviting the user to start the quiz.*
 
 ![Quiz Question Example](assets/screenshot_quiz.png)
-Gameplay showing a question, image (if applicable), options, and
+Gameplay showing a question, image  options
 
+---
+
+## 🎥 Demo
+![App Demo](assets/Quiz_On_The_Rocks.gif)
 ---
 
 ## ✨ Features
