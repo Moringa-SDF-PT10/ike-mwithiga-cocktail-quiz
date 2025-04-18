@@ -53,7 +53,7 @@ restartBtn.addEventListener("click", () => {
     startPromptScreen.classList.remove("hidden");
 });
 
-// Asynchronous function to fetch questions based on category, load the first question, and  Log and display error on the off-chance fetching fails
+// Asynchronous function to fetch questions based on category, load the first question, and  log and display error on the off-chance fetching fails
 async function startQuiz() {
     loadingIndicator.classList.remove("hidden");
     loadingText.textContent = "Mixing Cocktails...Fetching questions!";
@@ -125,14 +125,20 @@ function showQuestion() {
         return;
     }
     const q = quizQuestions[currentQuestionIndex];
+
+    // Clear previous options and feedback
     questionText.innerText = q.text;
     answerOptions.innerHTML = "";
     feedback.innerText = "";
+
+    // to show the corresponding question image
     drinkImg.src = q.image || '';
     drinkImg.style.display = q.image ? "block" : "none";
     timerBarContainer.classList.remove("timer-hidden");
     timerBar.style.opacity = 1;
 
+
+    // Creating the answer buttons
     q.options.forEach(option => {
         const button = document.createElement("button");
         button.innerText = option;
@@ -181,7 +187,7 @@ function handleAnswer(selected, question) {
 }
 
 
-// This funtion will disable all option buttons after an answer has been picked
+// This funtion should disable all option buttons after an answer has been picked
 function disableOptions() {
     answerOptions.querySelectorAll(".option-button").forEach(button => {
         button.disabled = true;

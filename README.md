@@ -7,9 +7,27 @@
 ---
 ## 📝 Project Overview
 
-This project is a web-based quiz game designed as a **Single Page Application (SPA)** to challenge and entertain users with trivia about cocktails. It integrates fundamental front-end development skills, utilizing **HTML, CSS, and Vanilla JavaScript** to create an interactive user experience. The application communicates with the public **TheCocktailDB API** as its dynamic data source, ensuring a varied question set across multiple sessions.
+This project is a web-based quiz game designed as a **Single Page Application (SPA)** to challenge and entertain users with trivia about cocktails. It integrates fundamental front-end development skills, utilizing **HTML, CSS, and JavaScript** to create an interactive user experience. The application communicates with the public **TheCocktailDB API** as its dynamic data source, ensuring a varied question set across multiple sessions.
 
 The SPA guides the user through an animated start sequence, allows category selection, presents timed questions with immediate feedback, tracks the score, and provides a review of incorrect answers upon completion, culminating in a confetti celebration for high scores.
+
+---
+## 📁 Project Structure
+
+Below is the file organization for this project:
+
+```text
+ike-mwithiga-cocktail-quiz/
+├── assets/
+│    ├── screenshot_start.png
+│    ├── screenshot_quiz.png
+│    └── shaker-animation.gif 
+│
+├── index.html
+├── style.css
+├── script.js 
+└── README.md
+```
 
 ---
 ## 🔗 Dependencies
@@ -29,7 +47,7 @@ This project relies on:
 This SPA integrates and showcases proficiency in the following areas:
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" height="20"/> **HTML**
-* Semantic Element Usage (`h1`-`h3`, `ul`, `li`, `button`, etc.)
+* Element Usage (`h1`-`h3`, `ul`, `li`, `button`, etc.)
 * Image Handling (`img` tag, dynamic `src`, `alt`)
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" height="20"/> **CSS**
@@ -75,11 +93,11 @@ Gameplay showing a question, image (if applicable), options, and
 -   📱 **Responsive Design** – Playable on desktop, tablet, or mobile.
 ---
 
-## 🚀 Getting Started & How to Play
+## 🎮 Getting Started & How to Play
 
 **Prerequisites:**
 
-* **Git:** You need Git installed to clone the repository. You can download it from [git-scm.com](https://git-scm.com/).
+* **Git:** You need Git installed to clone the repository.
 * **Web Browser:** Any modern web browser (like Chrome, Firefox, Edge, Safari) is required to view the application.
 * **Code Editor (Optional):** An editor like [VS Code](https://code.visualstudio.com/) is helpful for viewing or modifying the code.
 * **Node.js & npm (Optional):** Needed only if you want to use the `live-server` package method described below. Download from [nodejs.org](https://nodejs.org/).
@@ -123,7 +141,7 @@ Gameplay showing a question, image (if applicable), options, and
      * Make sure you have the "Live Server" extension installed.
      * Right-click on the `index.html` file in the VS Code Explorer panel.
      * Select "Open with Live Server".
-     * Your browser should automatically open, displaying the quiz, usually at an address like `http://127.0.0.1:5500/index.html`.
+     * Your browser should automatically open, displaying the quiz.
 
 **5. Play!**
    * Once the application is open in your browser (using either Method A or B), follow the "How to Play" instructions below.
@@ -138,18 +156,18 @@ Gameplay showing a question, image (if applicable), options, and
 2. **Category Selection**  
    - Choose quiz type: image, ingredients, glassware, or alcoholic content  
 3. **5 Rounds**  
-   - Answer questions before the timer bar runs out...Receive immediate feedback...
+   - Answer questions before the timer bar runs out and receive immediate feedback.
 4. **Score Display**  
-   - View final score and review incorrect answers...
+   - View final score and review incorrect answers.
 5. **Winning Moment**  
    - Confetti animation
-   - Click "Play Again?" to restart...Ulae
+   - Click "Another Round?" to restart.
 
 ---
 
 ## ❗ Known Limitations
-- Some cocktails returned from the API may lack complete data (e.g., missing ingredients or images)  
-- The API sometimes repeats cocktails due to limited filtering options  
+- Some cocktails returned from the API may lack complete data  
+- The API sometimes repeats cocktails 
 
 ---
 
@@ -162,11 +180,4 @@ Gameplay showing a question, image (if applicable), options, and
 - 💻 Hosted on **[GitHub Pages](https://pages.github.com/)**
 
 ---
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` file for more information (if included).
-
-MIT © [Your Name](https://github.com/yourusername)
-
 > *"Why limit happy to an hour?"*
