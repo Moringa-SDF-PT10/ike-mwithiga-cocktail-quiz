@@ -1,5 +1,5 @@
 # 🍸 Quiz On The Rocks!🍹
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://github.com/Moringa-SDF-PT10/ike-mwithiga-cocktail-quiz)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://moringa-sdf-pt10.github.io/ike-mwithiga-cocktail-quiz/)
 [![CocktailDB API](https://img.shields.io/badge/API-CocktailDB-ff69b4)](https://www.thecocktaildb.com/)
 
 > *An interactive, single-player **Single Page Application (SPA)** testing cocktail knowledge with dynamically fetched questions from a public API, multiple categories, timed responses, and engaging visuals.*
